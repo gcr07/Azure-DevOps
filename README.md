@@ -29,11 +29,22 @@ Igual mas administrativos
 
 Por ejemplo son extenciones como sonar cloud para escanear codigo etc.
 
+## Para poder ejecutar un pipeline
+
+Para poder usar paralel jobs microsoft protegio sus servidores y ahora tienes que hacer un request para que te permitan usar los pipelines.
+
+> https://learn.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted
+
+## Seguridad
+
+![image](https://user-images.githubusercontent.com/63270579/217894503-1932f874-fe07-44ed-87b0-f1f502c9dece.png)
+
+Por el lado derecho y como rama principal tenemos la organizacion despues tenemos cada proyecto dentro de esa organizacion. Usualmente los permisos se otorgan atravez de grupos aunque se le puede dar a un usuario en particular
 
 
+## Project collection
 
-
-
+Todos los proyectos que se pueden crear dentro de la organizacion. Todos los usuarios que esten dentro de este grupo podran ver todos los proyectos.
 
 
 
