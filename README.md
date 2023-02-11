@@ -47,6 +47,15 @@ Por el lado derecho y como rama principal tenemos la organizacion despues tenemo
 Todos los proyectos que se pueden crear dentro de la organizacion. Todos los usuarios que esten dentro de este grupo podran ver todos los proyectos.
 
 
+## GIT
+
+Lo importante que hay que recordar es que git la rama no se llama master si no ya esta como main entonces solo cambia cuanod instales.
+
+## Token 
+
+![image](https://user-images.githubusercontent.com/63270579/218222092-631234cc-b94f-47cc-8101-0ac978952cca.png)
+
+Para que el cliente de windows de git se pueda comunicar usa un token.
 
 
 
