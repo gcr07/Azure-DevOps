@@ -71,6 +71,7 @@ git config --global user.email "truco_"
 git config --global credential.helper cache
 
 
+
 Para borrar la cache en caso de equivocacion 
 
 git config --global --unset credential.helper 
