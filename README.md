@@ -47,6 +47,11 @@ Por el lado derecho y como rama principal tenemos la organizacion despues tenemo
 Todos los proyectos que se pueden crear dentro de la organizacion. Todos los usuarios que esten dentro de este grupo podran ver todos los proyectos.
 
 
+# Git Metodologias
+
+![image](https://user-images.githubusercontent.com/63270579/218518048-fc7c0899-c60c-4acd-8bf0-6ab38c6479f6.png)
+
+
 ## GIT
 
 Lo importante que hay que recordar es que git la rama no se llama master si no ya esta como main entonces solo cambia cuanod instales.
@@ -55,12 +60,73 @@ Lo importante que hay que recordar es que git la rama no se llama master si no y
 
 ![image](https://user-images.githubusercontent.com/63270579/218222092-631234cc-b94f-47cc-8101-0ac978952cca.png)
 
-Para que el cliente de windows de git se pueda comunicar usa un token.
+Para que el cliente de windows de git se pueda comunicar usa un token. Se usaron los comandos para configurar localmente 
+
+```
+
+git config --global user.name "Ger"
+
+git config --global user.email "truco_"
+
+git config --global credential.helper cache
 
 
+Para borrar la cache en caso de equivocacion 
+
+git config --global --unset credential.helper 
+
+```
 
 
+## Crear un repo (localmente) 
 
+En este caso ya bajamos el commons.zip que tenia un proyecto en JAVA
+
+```
+
+git init
+
+git add .
+
+ git commit -m "First commit"
+
+ git branch
+ 
+ ```
+ 
+ ### crear en azure el repo
+ 
+Estos pasos se crearon antes osea es del video el escenario es: supuesto que tu estas poniendo el repo que creaste le dices que ahora el origen sera el repo de azure para que localmmente y en azure esten alineados.
+
+```
+
+ git remote add origin https://Suko9@dev.azure.com/Suko9/MyFirstProject/_git/common
+
+git push -u origin --all ## todos los cambios los mandamos al nuevo origin 
+
+
+```
+
+## Para traernos los cambios
+
+en uestra consola de visual code ( osea en la carpeta ahi hacemos  un pull)
+
+```
+git pull origin
+
+```
+
+
+## Aplicamos la metodologia git flow 
+
+Creamos una rama develop en base a la rama main
+
+```
+git branch develop main
+
+git branch # Sirver para ver todas las branchs que tenemos
+
+```
 
 
 
